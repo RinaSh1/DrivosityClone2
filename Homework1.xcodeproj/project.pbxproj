@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ACD9D9EF349D3859DBA387B8 /* Pods_Homework1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFF072F118F12CAEA2F43513 /* Pods_Homework1.framework */; };
+		CD37F71528EF9B050056EA2E /* OrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD37F71328EF9B050056EA2E /* OrderCell.swift */; };
+		CD37F71628EF9B050056EA2E /* OrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD37F71428EF9B050056EA2E /* OrderCell.xib */; };
 		CD5C268F28BFA060000598ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5C268E28BFA060000598ED /* AppDelegate.swift */; };
 		CD5C269128BFA060000598ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5C269028BFA060000598ED /* SceneDelegate.swift */; };
 		CD5C269328BFA060000598ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5C269228BFA060000598ED /* ViewController.swift */; };
@@ -14,9 +17,17 @@
 		CD5C269828BFA062000598ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD5C269728BFA062000598ED /* Assets.xcassets */; };
 		CD5C269B28BFA062000598ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD5C269928BFA062000598ED /* LaunchScreen.storyboard */; };
 		CD5C26AA28C0D788000598ED /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5C26A928C0D788000598ED /* HomeViewController.swift */; };
+		CD609EA628DB0A15002F3E83 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD609EA528DB0A15002F3E83 /* GoogleService-Info.plist */; };
+		CD609EA828DB5444002F3E83 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD609EA728DB5444002F3E83 /* WelcomeViewController.swift */; };
+		CD609EAA28DB545E002F3E83 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD609EA928DB545E002F3E83 /* RegisterViewController.swift */; };
+		CD609EAC28E33539002F3E83 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD609EAB28E33539002F3E83 /* SplashViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3799482FC7B8F06289BFB434 /* Pods-Homework1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework1.release.xcconfig"; path = "Target Support Files/Pods-Homework1/Pods-Homework1.release.xcconfig"; sourceTree = "<group>"; };
+		8789617C5F103F62F56E7E98 /* Pods-Homework1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework1.debug.xcconfig"; path = "Target Support Files/Pods-Homework1/Pods-Homework1.debug.xcconfig"; sourceTree = "<group>"; };
+		CD37F71328EF9B050056EA2E /* OrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCell.swift; sourceTree = "<group>"; };
+		CD37F71428EF9B050056EA2E /* OrderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderCell.xib; sourceTree = "<group>"; };
 		CD5C268B28BFA060000598ED /* Homework1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homework1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD5C268E28BFA060000598ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD5C269028BFA060000598ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +37,11 @@
 		CD5C269A28BFA062000598ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD5C269C28BFA062000598ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD5C26A928C0D788000598ED /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CD609EA528DB0A15002F3E83 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CD609EA728DB5444002F3E83 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		CD609EA928DB545E002F3E83 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		CD609EAB28E33539002F3E83 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		FFF072F118F12CAEA2F43513 /* Pods_Homework1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Homework1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +49,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACD9D9EF349D3859DBA387B8 /* Pods_Homework1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		55ACCB539CDCDB2B035DFFDB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8789617C5F103F62F56E7E98 /* Pods-Homework1.debug.xcconfig */,
+				3799482FC7B8F06289BFB434 /* Pods-Homework1.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C756A6A24590A85121D1D249 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFF072F118F12CAEA2F43513 /* Pods_Homework1.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CD5C268228BFA060000598ED = {
 			isa = PBXGroup;
 			children = (
 				CD5C268D28BFA060000598ED /* Homework1 */,
 				CD5C268C28BFA060000598ED /* Products */,
+				55ACCB539CDCDB2B035DFFDB /* Pods */,
+				C756A6A24590A85121D1D249 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,14 +94,15 @@
 		CD5C268D28BFA060000598ED /* Homework1 */ = {
 			isa = PBXGroup;
 			children = (
-				CD5C26A228C0D281000598ED /* Model */,
 				CD5C26A328C0D291000598ED /* View */,
+				CD5C26A228C0D281000598ED /* Model */,
 				CD5C26A428C0D2AE000598ED /* Controller */,
 				CD5C268E28BFA060000598ED /* AppDelegate.swift */,
 				CD5C269028BFA060000598ED /* SceneDelegate.swift */,
 				CD5C269728BFA062000598ED /* Assets.xcassets */,
 				CD5C269928BFA062000598ED /* LaunchScreen.storyboard */,
 				CD5C269C28BFA062000598ED /* Info.plist */,
+				CD609EA528DB0A15002F3E83 /* GoogleService-Info.plist */,
 			);
 			path = Homework1;
 			sourceTree = "<group>";
@@ -81,6 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				CD5C269428BFA060000598ED /* Main.storyboard */,
+				CD37F71328EF9B050056EA2E /* OrderCell.swift */,
+				CD37F71428EF9B050056EA2E /* OrderCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -90,6 +129,9 @@
 			children = (
 				CD5C269228BFA060000598ED /* ViewController.swift */,
 				CD5C26A928C0D788000598ED /* HomeViewController.swift */,
+				CD609EA728DB5444002F3E83 /* WelcomeViewController.swift */,
+				CD609EA928DB545E002F3E83 /* RegisterViewController.swift */,
+				CD609EAB28E33539002F3E83 /* SplashViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -101,9 +143,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD5C269F28BFA062000598ED /* Build configuration list for PBXNativeTarget "Homework1" */;
 			buildPhases = (
+				5FAC39156A3A8C245F8762E3 /* [CP] Check Pods Manifest.lock */,
 				CD5C268728BFA060000598ED /* Sources */,
 				CD5C268828BFA060000598ED /* Frameworks */,
 				CD5C268928BFA060000598ED /* Resources */,
+				2FE8E572DD57A7B4902FA3BD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,7 +196,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD37F71628EF9B050056EA2E /* OrderCell.xib in Resources */,
 				CD5C269B28BFA062000598ED /* LaunchScreen.storyboard in Resources */,
+				CD609EA628DB0A15002F3E83 /* GoogleService-Info.plist in Resources */,
 				CD5C269828BFA062000598ED /* Assets.xcassets in Resources */,
 				CD5C269628BFA060000598ED /* Main.storyboard in Resources */,
 			);
@@ -160,14 +206,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2FE8E572DD57A7B4902FA3BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Homework1/Pods-Homework1-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Homework1/Pods-Homework1-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Homework1/Pods-Homework1-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FAC39156A3A8C245F8762E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Homework1-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CD5C268728BFA060000598ED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CD5C269328BFA060000598ED /* ViewController.swift in Sources */,
+				CD609EA828DB5444002F3E83 /* WelcomeViewController.swift in Sources */,
 				CD5C268F28BFA060000598ED /* AppDelegate.swift in Sources */,
+				CD609EAA28DB545E002F3E83 /* RegisterViewController.swift in Sources */,
 				CD5C269128BFA060000598ED /* SceneDelegate.swift in Sources */,
+				CD609EAC28E33539002F3E83 /* SplashViewController.swift in Sources */,
+				CD37F71528EF9B050056EA2E /* OrderCell.swift in Sources */,
 				CD5C26AA28C0D788000598ED /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,6 +402,7 @@
 		};
 		CD5C26A028BFA062000598ED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8789617C5F103F62F56E7E98 /* Pods-Homework1.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -327,7 +420,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com-.Homework1";
+				PRODUCT_BUNDLE_IDENTIFIER = "com-rinaSh.Homework1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -337,6 +430,7 @@
 		};
 		CD5C26A128BFA062000598ED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3799482FC7B8F06289BFB434 /* Pods-Homework1.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -354,7 +448,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com-.Homework1";
+				PRODUCT_BUNDLE_IDENTIFIER = "com-rinaSh.Homework1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

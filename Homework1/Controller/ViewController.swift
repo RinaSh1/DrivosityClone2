@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController, UITextViewDelegate {
     
@@ -15,8 +16,6 @@ class ViewController: UIViewController, UITextViewDelegate {
     @IBOutlet weak var rememberMeBtn: UIButton!
     @IBOutlet weak var signInOutlet: UIButton!
     
-    private let name = "rina"
-    private let pwd = "aaa"
     
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var logInOutlet: UIButton!
@@ -81,49 +80,40 @@ class ViewController: UIViewController, UITextViewDelegate {
         password.rightViewMode = UITextField.ViewMode.always
         password.rightView = view3
         
+        userName.text = "12@12.com"
+        password.text = "123456"
+        
     }
     //if the TextField (which the user will use to enter her/his name) is not empty. If it isn’t it stores the value from the TextField to UserDefaults, using the key
     
     @IBAction func Login(_ sender: UIButton) {
-        let usr: String = userName.text!
-        let pswd: String = password.text!
         
-        if let name = self.userName.text, name.isEmpty {
-            let alert = UIAlertController(title: "Alert", message: "Username is Empty!", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-            present(alert, animated: true, completion: {  //complition it means when user taps ok and we co back in if condition
-                return
-            })
-        } else if let pwd = self.password.text, pwd.isEmpty {
-            let alert = UIAlertController(title: "Alert", message: "Password is Empty!", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-            present(alert, animated: true, completion: {
-                return
-            })
+        let email = userName.text
+        let password = password.text
+      //  let tokenn = " AOEOulbAg6QOZghE6gihRkeAtx8fKMe_NwYKMzyUtMr1Qjfw-mnpZwLqwmPLWPC4kddNIN_sYL7cHERKvakJTYETi0Zn7LY3RJ5CFaKIH0YQC-E_SbjAjeKv-rH9HQmequ5bBW6VdkBS1E3fEkXUfqUZOihd8Dgu8nmW_ugkQ3jUsxLQOATW6qkNSnt2OoDky7pxmleH6LY5 "
+        
+        
+        Auth.auth().signIn(withEmail: email!, password: password!) {  authResult, error in
+            if let e = error{
+                print(e)
+                // TODO Show alert
+            } else {
+                if let token = authResult?.user.refreshToken {
+                    
+                    // save token to preferences
+                    UserDefaults.standard.set(token, forKey:"userID")
+                    print("This under is Token")
+                    print(token)
+                    self.navigationController?.dismiss(animated: true)
+                }
+            }
         }
-        
-        if usr != name || pswd != pwd {
-            print("wrong user pass")
-            let alert = UIAlertController(title: "Alert", message: "username or password incorrect!", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-            present(alert, animated: true, completion: {
-                return
-            })
-        }
-        UserDefaults.standard.set(userName.text!, forKey: "kUserName")
-        UserDefaults.standard.set(password.text!, forKey: "kPassword")
-        dismiss(animated: true)
-        
     }
-    
     //asks delegiate if textview has url, characterRange, interection and if it foes shoul open the link
     func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange, interaction: UITextItemInteraction) -> Bool {
         UIApplication.shared.open(URL)
         return false
     }
-    
-    
-    
     
     @IBAction func rememberMeBtn(_ sender: UIButton) {
         
@@ -136,9 +126,9 @@ class ViewController: UIViewController, UITextViewDelegate {
         print("buttonPressed")
     }
     
-    
-    
 }
+
+
 
 
 
