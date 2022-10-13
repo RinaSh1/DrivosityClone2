@@ -12,8 +12,9 @@ class HomeViewController: UIViewController {
     
     
     @IBOutlet weak var tableView: UITableView!
-    
-    
+    var dummyData = DummyData()
+    var orders: [Order] = []
+    var orderCell = OrderCell()
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,6 +23,10 @@ class HomeViewController: UIViewController {
         tableView.register(cellNib, forCellReuseIdentifier: "myCell")
         print("this is home screen")
         tableView.dataSource = self
+        self.parent?.title = "Orders"
+        print(orderCell.fetchingInformation())
+      //  print(fetchingInformation())
+        
         
     }
     
@@ -43,13 +48,19 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //  return orders.count
         return 3
+        
     }
     //ask the data source for a cell to insert in a particular locatin
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! OrderCell
-       // cell.label3.text = "hello"
-    
+        // cell.label3.text = "hello"
+        
         return cell
     }
+    
+    
 }
+
+

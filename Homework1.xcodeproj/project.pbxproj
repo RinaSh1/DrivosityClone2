@@ -21,6 +21,10 @@
 		CD609EA828DB5444002F3E83 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD609EA728DB5444002F3E83 /* WelcomeViewController.swift */; };
 		CD609EAA28DB545E002F3E83 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD609EA928DB545E002F3E83 /* RegisterViewController.swift */; };
 		CD609EAC28E33539002F3E83 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD609EAB28E33539002F3E83 /* SplashViewController.swift */; };
+		CD672AC528F6EDE8004A14E0 /* OrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD672AC428F6EDE8004A14E0 /* OrderModel.swift */; };
+		CDD5E7FD28F35C89004C7DE0 /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD5E7FC28F35C89004C7DE0 /* DummyData.swift */; };
+		CDD5E7FF28F41CF6004C7DE0 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD5E7FE28F41CF6004C7DE0 /* Order.swift */; };
+		CDD5E80528F6C564004C7DE0 /* KeyDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD5E80428F6C564004C7DE0 /* KeyDecodingContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +45,10 @@
 		CD609EA728DB5444002F3E83 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		CD609EA928DB545E002F3E83 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		CD609EAB28E33539002F3E83 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		CD672AC428F6EDE8004A14E0 /* OrderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderModel.swift; sourceTree = "<group>"; };
+		CDD5E7FC28F35C89004C7DE0 /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
+		CDD5E7FE28F41CF6004C7DE0 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		CDD5E80428F6C564004C7DE0 /* KeyDecodingContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyDecodingContainer.swift; sourceTree = "<group>"; };
 		FFF072F118F12CAEA2F43513 /* Pods_Homework1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Homework1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -110,6 +118,10 @@
 		CD5C26A228C0D281000598ED /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CDD5E7FE28F41CF6004C7DE0 /* Order.swift */,
+				CDD5E7FC28F35C89004C7DE0 /* DummyData.swift */,
+				CDD5E80428F6C564004C7DE0 /* KeyDecodingContainer.swift */,
+				CD672AC428F6EDE8004A14E0 /* OrderModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -255,9 +267,13 @@
 			files = (
 				CD5C269328BFA060000598ED /* ViewController.swift in Sources */,
 				CD609EA828DB5444002F3E83 /* WelcomeViewController.swift in Sources */,
+				CDD5E80528F6C564004C7DE0 /* KeyDecodingContainer.swift in Sources */,
 				CD5C268F28BFA060000598ED /* AppDelegate.swift in Sources */,
+				CD672AC528F6EDE8004A14E0 /* OrderModel.swift in Sources */,
+				CDD5E7FD28F35C89004C7DE0 /* DummyData.swift in Sources */,
 				CD609EAA28DB545E002F3E83 /* RegisterViewController.swift in Sources */,
 				CD5C269128BFA060000598ED /* SceneDelegate.swift in Sources */,
+				CDD5E7FF28F41CF6004C7DE0 /* Order.swift in Sources */,
 				CD609EAC28E33539002F3E83 /* SplashViewController.swift in Sources */,
 				CD37F71528EF9B050056EA2E /* OrderCell.swift in Sources */,
 				CD5C26AA28C0D788000598ED /* HomeViewController.swift in Sources */,

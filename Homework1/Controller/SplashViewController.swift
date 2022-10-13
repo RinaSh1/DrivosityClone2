@@ -19,7 +19,7 @@ class SplashViewController: UIViewController {
         
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         // Logic of login
@@ -28,8 +28,7 @@ class SplashViewController: UIViewController {
             // Check if we have saved token on preference
             print("correct!")
         }
-        
-        
+       
         
     }
 }
