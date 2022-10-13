@@ -212,7 +212,7 @@ import Foundation
  
  */
 // MARK: - OrderElement
-class OrderElement: Decodable {
+struct OrderElement: Decodable {
     var id: String
     var storeID, taskID: Int
     let color, status, foreignID: String

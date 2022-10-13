@@ -10,7 +10,7 @@ import UIKit
 class OrderCell: UITableViewCell {
     
     var dummyData = DummyData()
-    // var order = Order()
+    
     
     @IBOutlet weak var myView: UIView!
     @IBOutlet weak var goButtonOutlet: UIButton!
@@ -47,20 +47,25 @@ class OrderCell: UITableViewCell {
         
         // Configure the view for the selected state
     }
-    func fetchingInformation() {
+    func fetchingInformation()  {
         let decoder = JSONDecoder()
         if let jsonData = DummyData.dummyOrders.data(using: .utf8){
             do {
                 let orders = try decoder.decode([OrderElement].self, from: jsonData)
-                print(orders.first!.orderDescription)
-                print(orders.first!.ticketTotal.customerTotal)
+                 print(orders.first!.orderDescription)
+                 print(orders.first!.ticketTotal.customerTotal)
                 orders.forEach { orders in print(orders.address)}
+              //  let orderDesc = orders.first!.orderDescription
+                //let id = orders.first!.id
+                
+             //   let myOrders = OrderModel(orderDescription: orderDesc, id: id)
+                
             } catch {
                 print(String(describing: error))
+                
             }
             
         }
-        
-        
     }
+    
 }
