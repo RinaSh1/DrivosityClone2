@@ -20,26 +20,17 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nUg-8d-DrL">
                         <rect key="frame" x="15" y="10" width="308" height="161"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CMJ-qO-47J">
-                                <rect key="frame" x="236.5" y="33" width="56.5" height="42"/>
-                                <size key="titleShadowOffset" width="5" height="5"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="GO" cornerStyle="medium">
-                                    <fontDescription key="titleFontDescription" name="Avenir-Black" family="Avenir" pointSize="20"/>
-                                    <color key="baseForegroundColor" name="ForgotPassword Color"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="goButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="pvl-tv-TWD"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M33-fI-X6c">
-                                <rect key="frame" x="20" y="15" width="88" height="29"/>
+                                <rect key="frame" x="20" y="15" width="88" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="pfd-HG-SWK"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
                                 <color key="textColor" name="navControllerColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="AdressDestination" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A1O-Gb-a5k">
-                                <rect key="frame" x="20" y="44" width="200" height="20.5"/>
+                                <rect key="frame" x="20" y="43" width="200" height="20.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="1ay-g6-TXe"/>
                                 </constraints>
@@ -47,41 +38,58 @@
                                 <color key="textColor" name="rememberMeColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zFw-a0-lpu">
-                                <rect key="frame" x="0.0" y="111" width="308" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="gdU-Tg-MbL"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Review Order Receipt">
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="baseBackgroundColor" name="navControllerColor"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="reviewOrder:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Q9Z-y5-1Hc"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total $45" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ek0-uT-j4N">
-                                <rect key="frame" x="20" y="79.5" width="74" height="21.5"/>
+                                <rect key="frame" x="20" y="78.5" width="74" height="36.5"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
                                 <color key="textColor" name="navControllerColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcy-Pz-NCg">
+                                <rect key="frame" x="0.0" y="123" width="308" height="45"/>
+                                <color key="backgroundColor" name="navControllerColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="KMd-Sh-uew"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Review Order Receipt">
+                                    <fontDescription key="titleFontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="reviewOrder:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="NQ3-5C-8Hr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CMJ-qO-47J">
+                                <rect key="frame" x="225" y="38" width="53" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="HHy-gX-Wwg"/>
+                                    <constraint firstAttribute="width" constant="53" id="K3q-YS-Xg8"/>
+                                </constraints>
+                                <size key="titleShadowOffset" width="5" height="5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="GO" cornerStyle="medium">
+                                    <fontDescription key="titleFontDescription" name="Avenir-Black" family="Avenir" pointSize="18"/>
+                                    <color key="baseForegroundColor" name="ForgotPassword Color"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="goButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="pvl-tv-TWD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" name="viewXibBackground"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="zFw-a0-lpu" secondAttribute="bottom" id="Cmc-ha-B9f"/>
-                            <constraint firstAttribute="trailing" secondItem="CMJ-qO-47J" secondAttribute="trailing" constant="15" id="IR9-CH-cHg"/>
+                            <constraint firstAttribute="bottom" secondItem="hcy-Pz-NCg" secondAttribute="bottom" constant="-7" id="6U9-g6-nR6"/>
+                            <constraint firstAttribute="trailing" secondItem="hcy-Pz-NCg" secondAttribute="trailing" id="HP3-gh-vyb"/>
+                            <constraint firstAttribute="trailing" secondItem="CMJ-qO-47J" secondAttribute="trailing" constant="30" id="Lg0-eV-ww1"/>
                             <constraint firstItem="A1O-Gb-a5k" firstAttribute="top" secondItem="M33-fI-X6c" secondAttribute="bottom" id="NKO-qD-iCa"/>
                             <constraint firstItem="M33-fI-X6c" firstAttribute="leading" secondItem="nUg-8d-DrL" secondAttribute="leading" constant="20" id="Rce-hn-bJN"/>
-                            <constraint firstItem="CMJ-qO-47J" firstAttribute="centerY" secondItem="A1O-Gb-a5k" secondAttribute="centerY" id="URw-tW-6Bm"/>
+                            <constraint firstItem="hcy-Pz-NCg" firstAttribute="top" secondItem="CMJ-qO-47J" secondAttribute="bottom" constant="35" id="XBC-um-jWU"/>
                             <constraint firstItem="A1O-Gb-a5k" firstAttribute="leading" secondItem="nUg-8d-DrL" secondAttribute="leading" constant="20" id="YWg-Pu-iWF"/>
-                            <constraint firstItem="zFw-a0-lpu" firstAttribute="leading" secondItem="nUg-8d-DrL" secondAttribute="leading" id="aou-Sa-h06"/>
+                            <constraint firstItem="hcy-Pz-NCg" firstAttribute="leading" secondItem="nUg-8d-DrL" secondAttribute="leading" id="aaw-4k-ttS"/>
                             <constraint firstItem="ek0-uT-j4N" firstAttribute="leading" secondItem="nUg-8d-DrL" secondAttribute="leading" constant="20" id="bmO-PW-2UE"/>
-                            <constraint firstItem="CMJ-qO-47J" firstAttribute="top" secondItem="nUg-8d-DrL" secondAttribute="top" constant="33" id="fIu-a7-0zs"/>
                             <constraint firstItem="ek0-uT-j4N" firstAttribute="top" secondItem="A1O-Gb-a5k" secondAttribute="bottom" constant="15" id="l4m-d5-5eZ"/>
-                            <constraint firstAttribute="trailing" secondItem="zFw-a0-lpu" secondAttribute="trailingMargin" constant="8" id="lHL-yX-lVR"/>
-                            <constraint firstItem="zFw-a0-lpu" firstAttribute="top" secondItem="ek0-uT-j4N" secondAttribute="bottom" constant="10" id="lj8-cw-sOs"/>
+                            <constraint firstItem="hcy-Pz-NCg" firstAttribute="top" secondItem="ek0-uT-j4N" secondAttribute="bottom" constant="8" id="n1b-3X-qMt"/>
                             <constraint firstItem="M33-fI-X6c" firstAttribute="top" secondItem="nUg-8d-DrL" secondAttribute="top" constant="15" id="oFK-jd-vVN"/>
                         </constraints>
                     </view>
@@ -101,7 +109,7 @@
                 <outlet property="label1" destination="M33-fI-X6c" id="oca-le-YLD"/>
                 <outlet property="label2" destination="A1O-Gb-a5k" id="g3E-0E-cCa"/>
                 <outlet property="myView" destination="nUg-8d-DrL" id="eDa-mW-lCD"/>
-                <outlet property="revieOrderButtonOutlet" destination="zFw-a0-lpu" id="nv3-TM-cLc"/>
+                <outlet property="revieOrderButtonOutlet" destination="hcy-Pz-NCg" id="XCN-V4-8T1"/>
                 <outlet property="totalPriceLabel" destination="ek0-uT-j4N" id="bFK-NY-gUa"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="143.63839285714286"/>

@@ -10,6 +10,9 @@ import UIKit
  struct OrderModel {
  
      let orderDescription: String
-     let id: String
+     let address: String
+     let ticketTotal: String
+     
   
  }
+

@@ -21,6 +21,7 @@ class ViewController: UIViewController, UITextViewDelegate {
     @IBOutlet weak var logInOutlet: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view.
         userName.layer.masksToBounds = true
         userName.backgroundColor = UIColor(named: "textFieldColor")
@@ -90,7 +91,7 @@ class ViewController: UIViewController, UITextViewDelegate {
         
         let email = userName.text
         let password = password.text
-      //  let tokenn = " AOEOulbAg6QOZghE6gihRkeAtx8fKMe_NwYKMzyUtMr1Qjfw-mnpZwLqwmPLWPC4kddNIN_sYL7cHERKvakJTYETi0Zn7LY3RJ5CFaKIH0YQC-E_SbjAjeKv-rH9HQmequ5bBW6VdkBS1E3fEkXUfqUZOihd8Dgu8nmW_ugkQ3jUsxLQOATW6qkNSnt2OoDky7pxmleH6LY5 "
+        //  let tokenn = " AOEOulbAg6QOZghE6gihRkeAtx8fKMe_NwYKMzyUtMr1Qjfw-mnpZwLqwmPLWPC4kddNIN_sYL7cHERKvakJTYETi0Zn7LY3RJ5CFaKIH0YQC-E_SbjAjeKv-rH9HQmequ5bBW6VdkBS1E3fEkXUfqUZOihd8Dgu8nmW_ugkQ3jUsxLQOATW6qkNSnt2OoDky7pxmleH6LY5 "
         
         
         Auth.auth().signIn(withEmail: email!, password: password!) {  authResult, error in
@@ -126,6 +127,8 @@ class ViewController: UIViewController, UITextViewDelegate {
         print("buttonPressed")
     }
     
+    
+ 
 }
 
 

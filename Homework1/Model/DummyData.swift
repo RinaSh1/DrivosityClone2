@@ -25,35 +25,6 @@ class DummyData: NSObject{
         }
     }
     
-    /*  func parseJson() -> Order? {
-     let decoder = JSONDecoder()
-     if let jsonData = DummyData.dummyOrders.data(using: .utf8){
-     do {
-     let orders = try decoder.decode(Order.self, from: jsonData)
-     print(orders)
-     return orders
-     } catch {
-     print(String(describing: error))
-     
-     }
-     }
-     return nil
-     }
-     */
-    /* func parseJson() {
-     let decoder = JSONDecoder()
-     if let jsonData = DummyData.dummyOrders.data(using: .utf8){
-     do {
-     let orders = try decoder.decode([Order].self, from: jsonData)
-     print(orders)
-     
-     
-     } catch {
-     print(String(describing: error))
-     }
-     }
-     
-     }*/
     
 }
 
