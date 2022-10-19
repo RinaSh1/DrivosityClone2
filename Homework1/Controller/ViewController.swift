@@ -19,6 +19,8 @@ class ViewController: UIViewController, UITextViewDelegate {
     
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var logInOutlet: UIButton!
+    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -91,16 +93,15 @@ class ViewController: UIViewController, UITextViewDelegate {
         
         let email = userName.text
         let password = password.text
-        //  let tokenn = " AOEOulbAg6QOZghE6gihRkeAtx8fKMe_NwYKMzyUtMr1Qjfw-mnpZwLqwmPLWPC4kddNIN_sYL7cHERKvakJTYETi0Zn7LY3RJ5CFaKIH0YQC-E_SbjAjeKv-rH9HQmequ5bBW6VdkBS1E3fEkXUfqUZOihd8Dgu8nmW_ugkQ3jUsxLQOATW6qkNSnt2OoDky7pxmleH6LY5 "
-        
+      
         
         Auth.auth().signIn(withEmail: email!, password: password!) {  authResult, error in
             if let e = error{
+                print("-------------------------------------")
                 print(e)
                 // TODO Show alert
             } else {
                 if let token = authResult?.user.refreshToken {
-                    
                     // save token to preferences
                     UserDefaults.standard.set(token, forKey:"userID")
                     print("This under is Token")

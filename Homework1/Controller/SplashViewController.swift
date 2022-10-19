@@ -10,8 +10,7 @@ import Firebase
 
 class SplashViewController: UIViewController {
     
-    var isLogedIn = false
-    
+  //  var isLogedIn = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,16 +18,26 @@ class SplashViewController: UIViewController {
         
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        // Logic of login
-        if !isLogedIn && UserDefaults.standard.string(forKey: "userID") != nil{
+        let userDefault = UserDefaults.standard
+        
+        let isLogedIn = userDefault.string(forKey: "userID")
+        if(isLogedIn != nil) {
             performSegue(withIdentifier: "ShowHomeSegue", sender: nil)
-            // Check if we have saved token on preference
-            print("correct!")
+        }else{
+            performSegue(withIdentifier: "ShowAuthenticationSegue", sender: nil)
         }
-       
+        
+        
+        // Logic of login
+        /*   if !isLogedIn && UserDefaults.standard.string(forKey: "userID") != nil{
+         performSegue(withIdentifier: "ShowHomeSegue", sender: nil)
+         // Check if we have saved token on preference
+         print("correct!")
+         }
+         */
         
     }
 }

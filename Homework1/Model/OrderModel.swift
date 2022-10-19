@@ -6,13 +6,15 @@
 //
 
 import UIKit
- 
- struct OrderModel {
- 
-     let orderDescription: String
-     let address: String
-     let ticketTotal: String
-     
-  
- }
+
+// OrdersViewModel
+
+struct OrderModel {
+    
+    let orderDescription: String
+    let address: String
+    let ticketTotal: String
+    
+    
+}
 

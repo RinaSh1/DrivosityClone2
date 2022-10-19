@@ -48,7 +48,8 @@ class RegisterViewController: UIViewController {
                 }
                 else{
                     
-                    self.performSegue(withIdentifier: "RegisterToHome", sender: self)
+                    //self.performSegue(withIdentifier: "RegisterToHome", sender: s          elf)
+                    
                 }
                 //  if !email.isValidEmailAddr(email: email) {
                 

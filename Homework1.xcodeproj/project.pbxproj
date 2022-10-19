@@ -121,6 +121,7 @@
 				CDD5E7FE28F41CF6004C7DE0 /* OrderElement.swift */,
 				CDD5E7FC28F35C89004C7DE0 /* DummyData.swift */,
 				CD672AC428F6EDE8004A14E0 /* OrderModel.swift */,
+				CD9B69F728F84F14009E15AA /* OrderManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -138,7 +139,6 @@
 		CD5C26A428C0D2AE000598ED /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				CD9B69F728F84F14009E15AA /* OrderManager.swift */,
 				CD5C269228BFA060000598ED /* ViewController.swift */,
 				CD5C26A928C0D788000598ED /* HomeViewController.swift */,
 				CD609EA728DB5444002F3E83 /* WelcomeViewController.swift */,
