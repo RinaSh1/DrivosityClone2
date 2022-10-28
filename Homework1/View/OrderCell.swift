@@ -19,14 +19,11 @@ class OrderCell: UITableViewCell {
     @IBOutlet weak var label1: UILabel!
     @IBOutlet weak var label2: UILabel!
     @IBOutlet weak var totalPriceLabel: UILabel!
-    
     @IBAction func goButton(_ sender: UIButton) {
     }
     
     @IBAction func reviewOrder(_ sender: UIButton) {
     }
-    
-    
     
     override func awakeFromNib() {
         super.awakeFromNib()

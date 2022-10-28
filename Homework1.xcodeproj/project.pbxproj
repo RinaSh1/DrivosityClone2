@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		82511A2D2901729D00F79F2F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82511A2C2901729D00F79F2F /* SettingsViewController.swift */; };
+		82511A2F2907DF9700F79F2F /* MyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82511A2E2907DF9700F79F2F /* MyAccountViewController.swift */; };
+		826D95952900243F00B6AB12 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 826D95942900243F00B6AB12 /* GoogleService-Info.plist */; };
 		ACD9D9EF349D3859DBA387B8 /* Pods_Homework1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFF072F118F12CAEA2F43513 /* Pods_Homework1.framework */; };
 		CD37F71528EF9B050056EA2E /* OrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD37F71328EF9B050056EA2E /* OrderCell.swift */; };
 		CD37F71628EF9B050056EA2E /* OrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD37F71428EF9B050056EA2E /* OrderCell.xib */; };
@@ -17,7 +20,6 @@
 		CD5C269828BFA062000598ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD5C269728BFA062000598ED /* Assets.xcassets */; };
 		CD5C269B28BFA062000598ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD5C269928BFA062000598ED /* LaunchScreen.storyboard */; };
 		CD5C26AA28C0D788000598ED /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5C26A928C0D788000598ED /* HomeViewController.swift */; };
-		CD609EA628DB0A15002F3E83 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD609EA528DB0A15002F3E83 /* GoogleService-Info.plist */; };
 		CD609EA828DB5444002F3E83 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD609EA728DB5444002F3E83 /* WelcomeViewController.swift */; };
 		CD609EAA28DB545E002F3E83 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD609EA928DB545E002F3E83 /* RegisterViewController.swift */; };
 		CD609EAC28E33539002F3E83 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD609EAB28E33539002F3E83 /* SplashViewController.swift */; };
@@ -29,6 +31,9 @@
 
 /* Begin PBXFileReference section */
 		3799482FC7B8F06289BFB434 /* Pods-Homework1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework1.release.xcconfig"; path = "Target Support Files/Pods-Homework1/Pods-Homework1.release.xcconfig"; sourceTree = "<group>"; };
+		82511A2C2901729D00F79F2F /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		82511A2E2907DF9700F79F2F /* MyAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountViewController.swift; sourceTree = "<group>"; };
+		826D95942900243F00B6AB12 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8789617C5F103F62F56E7E98 /* Pods-Homework1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework1.debug.xcconfig"; path = "Target Support Files/Pods-Homework1/Pods-Homework1.debug.xcconfig"; sourceTree = "<group>"; };
 		CD37F71328EF9B050056EA2E /* OrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCell.swift; sourceTree = "<group>"; };
 		CD37F71428EF9B050056EA2E /* OrderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderCell.xib; sourceTree = "<group>"; };
@@ -41,7 +46,6 @@
 		CD5C269A28BFA062000598ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD5C269C28BFA062000598ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD5C26A928C0D788000598ED /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		CD609EA528DB0A15002F3E83 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CD609EA728DB5444002F3E83 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		CD609EA928DB545E002F3E83 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		CD609EAB28E33539002F3E83 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
@@ -110,7 +114,7 @@
 				CD5C269728BFA062000598ED /* Assets.xcassets */,
 				CD5C269928BFA062000598ED /* LaunchScreen.storyboard */,
 				CD5C269C28BFA062000598ED /* Info.plist */,
-				CD609EA528DB0A15002F3E83 /* GoogleService-Info.plist */,
+				826D95942900243F00B6AB12 /* GoogleService-Info.plist */,
 			);
 			path = Homework1;
 			sourceTree = "<group>";
@@ -144,6 +148,8 @@
 				CD609EA728DB5444002F3E83 /* WelcomeViewController.swift */,
 				CD609EA928DB545E002F3E83 /* RegisterViewController.swift */,
 				CD609EAB28E33539002F3E83 /* SplashViewController.swift */,
+				82511A2C2901729D00F79F2F /* SettingsViewController.swift */,
+				82511A2E2907DF9700F79F2F /* MyAccountViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -210,7 +216,7 @@
 			files = (
 				CD37F71628EF9B050056EA2E /* OrderCell.xib in Resources */,
 				CD5C269B28BFA062000598ED /* LaunchScreen.storyboard in Resources */,
-				CD609EA628DB0A15002F3E83 /* GoogleService-Info.plist in Resources */,
+				826D95952900243F00B6AB12 /* GoogleService-Info.plist in Resources */,
 				CD5C269828BFA062000598ED /* Assets.xcassets in Resources */,
 				CD5C269628BFA060000598ED /* Main.storyboard in Resources */,
 			);
@@ -275,6 +281,8 @@
 				CD5C269128BFA060000598ED /* SceneDelegate.swift in Sources */,
 				CDD5E7FF28F41CF6004C7DE0 /* OrderElement.swift in Sources */,
 				CD609EAC28E33539002F3E83 /* SplashViewController.swift in Sources */,
+				82511A2F2907DF9700F79F2F /* MyAccountViewController.swift in Sources */,
+				82511A2D2901729D00F79F2F /* SettingsViewController.swift in Sources */,
 				CD37F71528EF9B050056EA2E /* OrderCell.swift in Sources */,
 				CD5C26AA28C0D788000598ED /* HomeViewController.swift in Sources */,
 			);

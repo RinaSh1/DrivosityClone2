@@ -12,11 +12,8 @@ class ViewController: UIViewController, UITextViewDelegate {
     
     @IBOutlet weak var userName: UITextField!
     @IBOutlet weak var password: UITextField!
-    
     @IBOutlet weak var rememberMeBtn: UIButton!
     @IBOutlet weak var signInOutlet: UIButton!
-    
-    
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var logInOutlet: UIButton!
     
@@ -43,16 +40,13 @@ class ViewController: UIViewController, UITextViewDelegate {
         )
         logInOutlet.layer.cornerRadius = 10.0
         signInOutlet.layer.cornerRadius = 10.0
-        
         //TextView giving a Link
         let attributedString = NSMutableAttributedString(string: "By pressing LOGIN you agree to the End User License Agreement and authorise and Consent to the collection use and processing of your GPS location and driving application data. ")
-        
         attributedString.addAttribute(.link, value: "https://www.hackingwithswift.com", range: NSRange(location: 34, length: 28))
         //assigning the new value
         textView.attributedText = attributedString
         textView.textAlignment = .center
         textView.textColor = UIColor(named: "textFieldColor")
-        
         //add icon in textfields
         let imageView = UIImageView(frame: CGRect(x: 20.0, y: 12.0, width: 15.0, height: 15.0))
         let image = UIImage(named: "Path 17340")
@@ -62,7 +56,6 @@ class ViewController: UIViewController, UITextViewDelegate {
         view.addSubview(imageView)
         userName.leftViewMode = UITextField.ViewMode.always
         userName.leftView = view
-        
         //paswordicon
         let pwImageView = UIImageView(frame: CGRect(x: 20.0, y: 12.0, width: 15.0, height: 15.0))
         let pwImage = UIImage(named: "Path 2923")
@@ -72,7 +65,6 @@ class ViewController: UIViewController, UITextViewDelegate {
         view2.addSubview(pwImageView)
         password.leftViewMode = UITextField.ViewMode.always
         password.leftView = view2
-        
         //rightimageicon passwordtextfield
         let rightImageView = UIImageView(frame: CGRect(x: 0.0, y: 10.0, width: 16.0, height: 15.0))
         let rightImage = UIImage(named: "Path 2922")
@@ -106,7 +98,10 @@ class ViewController: UIViewController, UITextViewDelegate {
                     UserDefaults.standard.set(token, forKey:"userID")
                     print("This under is Token")
                     print(token)
-                    self.navigationController?.dismiss(animated: true)
+                  //  self.navigationController?.dismiss(animated: true)
+                   // self.dismiss(animated: true, completion: nil)
+                    self.navigationController?.popViewController(animated: false)
+                    self.dismiss(animated: false, completion: nil)
                 }
             }
         }
@@ -119,7 +114,6 @@ class ViewController: UIViewController, UITextViewDelegate {
     
     @IBAction func rememberMeBtn(_ sender: UIButton) {
         
-        
         if sender.isSelected{
             sender.isSelected = false
         }else{
@@ -127,9 +121,6 @@ class ViewController: UIViewController, UITextViewDelegate {
         }
         print("buttonPressed")
     }
-    
-    
- 
 }
 
 
