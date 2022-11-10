@@ -7,7 +7,6 @@
 
 import UIKit
 import Cosmos
-import TinyConstraints
 
 class MyAccountViewController: UIViewController {
     @IBOutlet weak var myView: UIView!

@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+ platform :ios, '10.0'
 
 target 'Homework1' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -8,6 +8,6 @@ target 'Homework1' do
   # Pods for Homework1
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
-  
+  pod 'Cosmos'
 
 end

@@ -389,16 +389,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mFH-oS-5PH" userLabel="MyView">
-                                <rect key="frame" x="0.0" y="0.0" width="390" height="251"/>
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="250"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HsC-eQ-t5q">
-                                        <rect key="frame" x="147.66666666666666" y="61.000000000000007" width="95" height="23.333333333333336"/>
+                                        <rect key="frame" x="147.66666666666666" y="61.000000000000007" width="95" height="22.333333333333336"/>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="Et2-go-9Fh">
-                                        <rect key="frame" x="20" y="127.33333333333333" width="350" height="50.666666666666671"/>
+                                        <rect key="frame" x="20" y="126.33333333333333" width="350" height="50.666666666666671"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3xU-6x-yDj">
                                                 <rect key="frame" x="0.0" y="0.0" width="110.66666666666667" height="50.666666666666664"/>
@@ -453,36 +453,81 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G2O-Ro-kqf" userLabel=" SecondView">
-                                        <rect key="frame" x="15" y="196" width="360" height="95"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G2O-Ro-kqf" userLabel="SecondView">
+                                        <rect key="frame" x="15" y="195" width="360" height="95"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maria Rodrigouez" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="djq-cA-qW9">
-                                                <rect key="frame" x="141.33333333333337" y="25" width="136.66666666666663" height="23.333333333333329"/>
-                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                                <rect key="frame" x="115" y="20.000000000000004" width="245" height="37.333333333333343"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="25"/>
                                                 <color key="textColor" name="navControllerColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="3Os-fQ-sPb">
-                                                <rect key="frame" x="29" y="13" width="60" height="57"/>
+                                                <rect key="frame" x="25" y="20" width="65" height="65"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="60" id="RyN-w6-q8Q"/>
+                                                    <constraint firstAttribute="width" constant="65" id="QH6-ke-hnL"/>
                                                 </constraints>
                                             </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="wTe-wV-7iG">
+                                                <rect key="frame" x="114.99999999999999" y="59.333333333333336" width="177.66666666666663" height="20.666666666666664"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.7" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcs-5i-rQh">
+                                                        <rect key="frame" x="0.0" y="0.0" width="18.333333333333332" height="20.666666666666668"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="13"/>
+                                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qTX-6I-UjQ" customClass="CosmosView" customModule="Cosmos">
+                                                        <rect key="frame" x="25.333333333333343" y="0.0" width="120" height="20.666666666666668"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                                                <integer key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                                                <color key="value" name="Color"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="emptyColor">
+                                                                <color key="value" systemColor="systemGray3Color"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                                                                <color key="value" name="ForgotPassword Color"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                                                <real key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(15)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5T6-v9-EiU">
+                                                        <rect key="frame" x="152.33333333333331" y="0.0" width="25.333333333333343" height="20.666666666666668"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
+                                                        <color key="textColor" name="ForgotPassword Color"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                         <color key="backgroundColor" name="viewXibBackground"/>
                                         <constraints>
-                                            <constraint firstItem="djq-cA-qW9" firstAttribute="top" secondItem="G2O-Ro-kqf" secondAttribute="top" constant="25" id="1KY-5p-4bj"/>
-                                            <constraint firstAttribute="bottom" secondItem="3Os-fQ-sPb" secondAttribute="bottom" constant="25" id="1lT-nv-gVg"/>
-                                            <constraint firstAttribute="trailing" secondItem="djq-cA-qW9" secondAttribute="trailing" constant="82" id="1zk-hu-kT4"/>
                                             <constraint firstAttribute="height" constant="95" id="3dX-f0-MCU"/>
-                                            <constraint firstItem="djq-cA-qW9" firstAttribute="leading" secondItem="3Os-fQ-sPb" secondAttribute="trailing" constant="52.333333333333371" id="4OK-6X-nmk"/>
-                                            <constraint firstItem="djq-cA-qW9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="3Os-fQ-sPb" secondAttribute="trailing" constant="8" symbolic="YES" id="PAg-yG-tDN"/>
-                                            <constraint firstItem="3Os-fQ-sPb" firstAttribute="top" secondItem="G2O-Ro-kqf" secondAttribute="top" constant="13" id="jrx-Ia-U4c"/>
+                                            <constraint firstItem="djq-cA-qW9" firstAttribute="leading" secondItem="3Os-fQ-sPb" secondAttribute="trailing" constant="25" id="690-AU-S5F"/>
+                                            <constraint firstItem="3Os-fQ-sPb" firstAttribute="top" secondItem="G2O-Ro-kqf" secondAttribute="top" constant="20" id="A8s-bZ-fmo"/>
+                                            <constraint firstItem="wTe-wV-7iG" firstAttribute="top" secondItem="djq-cA-qW9" secondAttribute="bottom" constant="2" id="K2j-Qo-Oim"/>
+                                            <constraint firstAttribute="bottom" secondItem="wTe-wV-7iG" secondAttribute="bottom" constant="15" id="OC4-9U-buN"/>
+                                            <constraint firstItem="djq-cA-qW9" firstAttribute="top" secondItem="G2O-Ro-kqf" secondAttribute="top" constant="20" id="Wuj-Yz-NLV"/>
+                                            <constraint firstAttribute="trailing" secondItem="djq-cA-qW9" secondAttribute="trailing" id="a4r-4K-ZgI"/>
+                                            <constraint firstItem="3Os-fQ-sPb" firstAttribute="leading" secondItem="G2O-Ro-kqf" secondAttribute="leading" constant="25" id="edN-fR-WFB"/>
+                                            <constraint firstItem="wTe-wV-7iG" firstAttribute="leading" secondItem="djq-cA-qW9" secondAttribute="leading" id="fzN-V8-iYO"/>
+                                            <constraint firstAttribute="bottom" secondItem="3Os-fQ-sPb" secondAttribute="bottom" constant="10" id="na8-zP-W3O"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" name="navControllerColor"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="4tQ-VP-FGs"/>
                                     <constraint firstItem="G2O-Ro-kqf" firstAttribute="top" secondItem="Et2-go-9Fh" secondAttribute="bottom" constant="18" id="8vS-Vr-vZc"/>
                                     <constraint firstItem="Et2-go-9Fh" firstAttribute="top" secondItem="HsC-eQ-t5q" secondAttribute="bottom" constant="43" id="Ju6-NT-QXz"/>
                                     <constraint firstAttribute="bottom" secondItem="G2O-Ro-kqf" secondAttribute="bottom" constant="-40" id="MPg-zv-jwp"/>
@@ -495,7 +540,7 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Npc-aC-GUx">
-                                <rect key="frame" x="15" y="306" width="360" height="305"/>
+                                <rect key="frame" x="15" y="305" width="360" height="305"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="y4V-r2-zVv">
                                         <rect key="frame" x="0.0" y="0.0" width="360" height="95"/>
@@ -709,11 +754,6 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qTX-6I-UjQ">
-                                <rect key="frame" x="117" y="247" width="228" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sVV-SF-eGU"/>
                         <color key="backgroundColor" name="TabBarBackgroundColor"/>
@@ -917,6 +957,11 @@
             <point key="canvasLocation" x="306" y="-1893"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="qTX-6I-UjQ">
+            <size key="intrinsicContentSize" width="120" height="20"/>
+        </designable>
+    </designables>
     <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
         <image name="Group 1482" width="24.658000946044922" height="24.351999282836914"/>
@@ -959,6 +1004,9 @@
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
