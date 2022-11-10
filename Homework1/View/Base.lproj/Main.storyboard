@@ -383,7 +383,7 @@
         <!--My Acoount-->
         <scene sceneID="Nnc-fu-2zT">
             <objects>
-                <viewController id="0P0-jt-mqc" customClass="MyAccountViewController" customModule="Homework1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0P0-jt-mqc" customClass="MyAccountViewController" customModule="Homework1" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bwj-WP-fgc">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -709,6 +709,11 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qTX-6I-UjQ">
+                                <rect key="frame" x="117" y="247" width="228" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sVV-SF-eGU"/>
                         <color key="backgroundColor" name="TabBarBackgroundColor"/>
@@ -726,6 +731,7 @@
                     <connections>
                         <outlet property="myImage" destination="3Os-fQ-sPb" id="2Ew-5M-oMb"/>
                         <outlet property="myView" destination="G2O-Ro-kqf" id="VQc-D2-WCF"/>
+                        <outlet property="starView" destination="qTX-6I-UjQ" id="fJK-ol-efI"/>
                         <outlet property="view1" destination="FuE-L6-W3b" id="soy-Lt-Ocf"/>
                         <outlet property="view2" destination="8nT-m0-iOn" id="XYL-eu-HRG"/>
                         <outlet property="view3" destination="MRj-XW-xzV" id="6pM-b5-scw"/>

@@ -6,10 +6,13 @@
 //
 
 import UIKit
+import Cosmos
+import TinyConstraints
 
 class MyAccountViewController: UIViewController {
     @IBOutlet weak var myView: UIView!
     
+    @IBOutlet weak var starView: UIView!
     @IBOutlet weak var myImage: UIImageView!
     @IBOutlet weak var view1: UIView!
     @IBOutlet weak var view2: UIView!

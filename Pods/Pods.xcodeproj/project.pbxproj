@@ -14527,6 +14527,7 @@
 		822EB79DD2DAA10E4DCC8B5E941164C8 /* format_request.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = format_request.h; path = src/core/lib/http/format_request.h; sourceTree = "<group>"; };
 		823A4D4265965A78AF9D5837CB3892ED /* quic_config.upb.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = quic_config.upb.h; path = "src/core/ext/upb-generated/envoy/config/listener/v3/quic_config.upb.h"; sourceTree = "<group>"; };
 		824FD76144DD7F404142A396B9FA8381 /* server_credentials.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = server_credentials.cc; path = src/cpp/server/server_credentials.cc; sourceTree = "<group>"; };
+		82511A92291A687F00F79F2F /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = "<group>"; };
 		827AED9F59641D65F561D68A21EB73A8 /* format_request.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = format_request.cc; path = src/core/lib/http/format_request.cc; sourceTree = "<group>"; };
 		827D458893D694C3259FEC1266F6FC68 /* hashtablez_sampler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hashtablez_sampler.h; path = absl/container/internal/hashtablez_sampler.h; sourceTree = "<group>"; };
 		8284EDA4C227E5D6942A2F00B0677236 /* semantic_version.upb.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = semantic_version.upb.c; path = "src/core/ext/upb-generated/envoy/type/v3/semantic_version.upb.c"; sourceTree = "<group>"; };
@@ -14911,7 +14912,7 @@
 		9D6E1314EDB002F571CF2B925F304700 /* GULAppDelegateSwizzler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULAppDelegateSwizzler.h; path = GoogleUtilities/AppDelegateSwizzler/Public/GoogleUtilities/GULAppDelegateSwizzler.h; sourceTree = "<group>"; };
 		9D798FE31F21E4A59249DB2A28A9ED33 /* alts_frame_protector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = alts_frame_protector.h; path = src/core/tsi/alts/frame_protector/alts_frame_protector.h; sourceTree = "<group>"; };
 		9D799D2E71428BF63459053DC08AE450 /* slice_string_helpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = slice_string_helpers.h; path = src/core/lib/slice/slice_string_helpers.h; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; };
 		9D952B1B422A5885D12AEFFDFCC5E7FF /* reflection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = reflection.h; path = third_party/upb/upb/reflection.h; sourceTree = "<group>"; };
 		9DA34AE69541F42D458CB50000A3DFA5 /* udp_listener_config.upb.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = udp_listener_config.upb.h; path = "src/core/ext/upb-generated/envoy/config/listener/v3/udp_listener_config.upb.h"; sourceTree = "<group>"; };
 		9DAED5119A8E5A661F641BEE99336E7C /* seed_gen_exception.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = seed_gen_exception.h; path = absl/random/seed_gen_exception.h; sourceTree = "<group>"; };
@@ -19675,6 +19676,7 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				82511A92291A687F00F79F2F /* Podfile */,
 				D68CA58901FBF589D75F5E40F1EAF5BA /* Frameworks */,
 				B01021771027F5F4E2B0EF50E31781D5 /* Pods */,
 				398DAA9FAA9595FAB79D76D56D286FA9 /* Products */,
