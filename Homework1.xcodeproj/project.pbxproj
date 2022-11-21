@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		821ED4EB29253599007974AE /* DriveScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821ED4EA29253599007974AE /* DriveScoreView.swift */; };
+		821ED4ED29253626007974AE /* DriveScoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 821ED4EC29253626007974AE /* DriveScoreView.xib */; };
 		82511A2D2901729D00F79F2F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82511A2C2901729D00F79F2F /* SettingsViewController.swift */; };
 		82511A2F2907DF9700F79F2F /* MyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82511A2E2907DF9700F79F2F /* MyAccountViewController.swift */; };
 		826D95952900243F00B6AB12 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 826D95942900243F00B6AB12 /* GoogleService-Info.plist */; };
@@ -20,7 +22,7 @@
 		CD5C269828BFA062000598ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD5C269728BFA062000598ED /* Assets.xcassets */; };
 		CD5C269B28BFA062000598ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD5C269928BFA062000598ED /* LaunchScreen.storyboard */; };
 		CD5C26AA28C0D788000598ED /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5C26A928C0D788000598ED /* HomeViewController.swift */; };
-		CD609EA828DB5444002F3E83 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD609EA728DB5444002F3E83 /* WelcomeViewController.swift */; };
+		CD609EA828DB5444002F3E83 /* TripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD609EA728DB5444002F3E83 /* TripsViewController.swift */; };
 		CD609EAA28DB545E002F3E83 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD609EA928DB545E002F3E83 /* RegisterViewController.swift */; };
 		CD609EAC28E33539002F3E83 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD609EAB28E33539002F3E83 /* SplashViewController.swift */; };
 		CD672AC528F6EDE8004A14E0 /* OrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD672AC428F6EDE8004A14E0 /* OrderModel.swift */; };
@@ -31,6 +33,8 @@
 
 /* Begin PBXFileReference section */
 		3799482FC7B8F06289BFB434 /* Pods-Homework1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework1.release.xcconfig"; path = "Target Support Files/Pods-Homework1/Pods-Homework1.release.xcconfig"; sourceTree = "<group>"; };
+		821ED4EA29253599007974AE /* DriveScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriveScoreView.swift; sourceTree = "<group>"; };
+		821ED4EC29253626007974AE /* DriveScoreView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DriveScoreView.xib; sourceTree = "<group>"; };
 		82511A2C2901729D00F79F2F /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		82511A2E2907DF9700F79F2F /* MyAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountViewController.swift; sourceTree = "<group>"; };
 		826D95942900243F00B6AB12 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -46,7 +50,7 @@
 		CD5C269A28BFA062000598ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD5C269C28BFA062000598ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD5C26A928C0D788000598ED /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		CD609EA728DB5444002F3E83 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		CD609EA728DB5444002F3E83 /* TripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsViewController.swift; sourceTree = "<group>"; };
 		CD609EA928DB545E002F3E83 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		CD609EAB28E33539002F3E83 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		CD672AC428F6EDE8004A14E0 /* OrderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderModel.swift; sourceTree = "<group>"; };
@@ -136,6 +140,8 @@
 				CD5C269428BFA060000598ED /* Main.storyboard */,
 				CD37F71328EF9B050056EA2E /* OrderCell.swift */,
 				CD37F71428EF9B050056EA2E /* OrderCell.xib */,
+				821ED4EA29253599007974AE /* DriveScoreView.swift */,
+				821ED4EC29253626007974AE /* DriveScoreView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -145,7 +151,7 @@
 			children = (
 				CD5C269228BFA060000598ED /* ViewController.swift */,
 				CD5C26A928C0D788000598ED /* HomeViewController.swift */,
-				CD609EA728DB5444002F3E83 /* WelcomeViewController.swift */,
+				CD609EA728DB5444002F3E83 /* TripsViewController.swift */,
 				CD609EA928DB545E002F3E83 /* RegisterViewController.swift */,
 				CD609EAB28E33539002F3E83 /* SplashViewController.swift */,
 				82511A2C2901729D00F79F2F /* SettingsViewController.swift */,
@@ -217,6 +223,7 @@
 				CD37F71628EF9B050056EA2E /* OrderCell.xib in Resources */,
 				CD5C269B28BFA062000598ED /* LaunchScreen.storyboard in Resources */,
 				826D95952900243F00B6AB12 /* GoogleService-Info.plist in Resources */,
+				821ED4ED29253626007974AE /* DriveScoreView.xib in Resources */,
 				CD5C269828BFA062000598ED /* Assets.xcassets in Resources */,
 				CD5C269628BFA060000598ED /* Main.storyboard in Resources */,
 			);
@@ -271,9 +278,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				821ED4EB29253599007974AE /* DriveScoreView.swift in Sources */,
 				CD9B69F828F84F14009E15AA /* OrderManager.swift in Sources */,
 				CD5C269328BFA060000598ED /* ViewController.swift in Sources */,
-				CD609EA828DB5444002F3E83 /* WelcomeViewController.swift in Sources */,
+				CD609EA828DB5444002F3E83 /* TripsViewController.swift in Sources */,
 				CD5C268F28BFA060000598ED /* AppDelegate.swift in Sources */,
 				CD672AC528F6EDE8004A14E0 /* OrderModel.swift in Sources */,
 				CDD5E7FD28F35C89004C7DE0 /* DummyData.swift in Sources */,
