@@ -43,8 +43,6 @@ class RegisterViewController: UIViewController {
                     self.present(alert, animated: true, completion: {  //complition it means when user taps ok and we co back in if condition
                         return
                     })
-                    
-                    
                 }
                 else{
                     

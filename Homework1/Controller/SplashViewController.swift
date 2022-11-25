@@ -9,13 +9,6 @@ import UIKit
 import Firebase
 
 class SplashViewController: UIViewController {
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
-    }
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -27,6 +20,5 @@ class SplashViewController: UIViewController {
         }else{
             performSegue(withIdentifier: "ShowAuthenticationSegue", sender: nil)
         }
-        
     }
 }

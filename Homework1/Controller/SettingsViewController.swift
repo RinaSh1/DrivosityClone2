@@ -13,12 +13,7 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var logOut: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        print("Settings Screen")
-       
     }
-    
 
     @IBAction func logOut(_ sender: UIButton) {
     do {
@@ -33,6 +28,4 @@ class SettingsViewController: UIViewController {
     }
       
     }
-    
-
 }

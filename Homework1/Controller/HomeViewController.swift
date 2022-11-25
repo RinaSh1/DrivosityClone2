@@ -35,7 +35,6 @@ class HomeViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
 
-        
         //  print(orderC.fetchingInformation()!)
         //  print(fetchingInformation())
         reviewButtonOutlet.layer.cornerRadius = 10
@@ -50,11 +49,8 @@ class HomeViewController: UIViewController {
         reviewButtonOutlet.layer.shadowOffset = CGSize(width: 0, height: 0)
         reviewButtonOutlet.layer.shadowOpacity = 0.7
         reviewButtonOutlet.layer.shadowRadius = 2.0
-        
-     
-
-    }
     
+    }
     
 }
 
@@ -62,9 +58,7 @@ extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return orders.count
-   
-        
-        
+
     }
     //ask the data source for a cell to insert in a particular locatin
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

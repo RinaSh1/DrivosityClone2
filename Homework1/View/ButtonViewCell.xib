@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ButtonViewCell" customModule="Homework1" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" rowHeight="50" id="KGk-i7-Jjw" customClass="ButtonViewCell" customModule="Homework1" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="297" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="297" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wGP-WS-Nu5">
+                        <rect key="frame" x="16" y="5" width="265" height="40"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="98" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a5b-3Z-ubN">
+                                <rect key="frame" x="30" y="8" width="24" height="24"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8.2 Ml in 28 Min 27 sec" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tq2-Fh-Cdx">
+                                <rect key="frame" x="56" y="8" width="164" height="24"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
+                                <color key="textColor" name="orColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="a5b-3Z-ubN" firstAttribute="leading" secondItem="wGP-WS-Nu5" secondAttribute="leading" constant="30" id="4Wv-fs-K03"/>
+                            <constraint firstItem="a5b-3Z-ubN" firstAttribute="top" secondItem="wGP-WS-Nu5" secondAttribute="top" constant="8" id="Adm-af-jIZ"/>
+                            <constraint firstAttribute="trailing" secondItem="tq2-Fh-Cdx" secondAttribute="trailing" constant="45" id="WLa-Hw-oia"/>
+                            <constraint firstAttribute="bottom" secondItem="tq2-Fh-Cdx" secondAttribute="bottom" constant="8" id="nO0-Oz-nta"/>
+                            <constraint firstItem="tq2-Fh-Cdx" firstAttribute="top" secondItem="wGP-WS-Nu5" secondAttribute="top" constant="8" id="o0R-tU-2FJ"/>
+                            <constraint firstAttribute="bottom" secondItem="a5b-3Z-ubN" secondAttribute="bottom" constant="8" id="sED-nT-NGR"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" name="TabBarBackgroundColor"/>
+                <color key="tintColor" name="viewXibBackground"/>
+                <constraints>
+                    <constraint firstItem="wGP-WS-Nu5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="PKE-6B-R8a"/>
+                    <constraint firstAttribute="trailing" secondItem="wGP-WS-Nu5" secondAttribute="trailing" constant="16" id="Pze-D6-khd"/>
+                    <constraint firstItem="wGP-WS-Nu5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="oAf-Zg-w47"/>
+                    <constraint firstAttribute="bottom" secondItem="wGP-WS-Nu5" secondAttribute="bottom" constant="5" id="rhL-M5-Hsb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" name="viewXibBackground"/>
+            <connections>
+                <outlet property="label1" destination="a5b-3Z-ubN" id="wHV-LF-AHf"/>
+                <outlet property="label2" destination="tq2-Fh-Cdx" id="6Qk-Zt-irA"/>
+                <outlet property="myView" destination="wGP-WS-Nu5" id="zEz-hy-cqN"/>
+            </connections>
+            <point key="canvasLocation" x="132.60869565217394" y="72.321428571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="TabBarBackgroundColor">
+            <color red="0.8784313725490196" green="0.88627450980392153" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="orColor">
+            <color red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="viewXibBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

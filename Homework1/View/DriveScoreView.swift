@@ -31,7 +31,7 @@ import UIKit
         view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         view.frame = self.bounds
         view.layer.cornerRadius = self.frame.height/12
-        view.layer.masksToBounds = false
+        view.layer.masksToBounds = true
         view.clipsToBounds = true
         view.layer.shadowOffset = CGSize(width: 0, height: 0)
         view.layer.shadowOpacity = 0.7

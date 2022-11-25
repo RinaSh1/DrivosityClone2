@@ -49,7 +49,6 @@ struct OrderElement: Codable {
         case ticketTotal = "TicketTotal"
         case orderDetails = "OrderDetails"
     }
-    
     init(id: String, storeID: Int, taskID: Int, color: String, status: String, foreignID: String, foreignAgentID: Int, lat: Double, lng: Double, address: String, orderDescription: String, orderRank: Int, dueTime: Int, createdTime: Int, assignedTime: Int, planAhead: Bool, sessionAssignTime: JSONNull?, userID: Int, deviceHash: String, toBeDeleted: String, destinationAddress: DestinationAddress?, deliveryNotes: String, ticketTotal: TicketTotal, orderDetails: [OrderDetail]) {
         self.id = id
         self.storeID = storeID
@@ -77,7 +76,6 @@ struct OrderElement: Codable {
         self.orderDetails = orderDetails
     }
 }
-
 // MARK: - DestinationAddress
 class DestinationAddress: Codable {
     let address1, address2, cityState, zip: String
@@ -95,7 +93,6 @@ class DestinationAddress: Codable {
         self.zip = zip
     }
 }
-
 // MARK: - OrderDetail
 class OrderDetail: Codable {
     let orderDetailDescription: String
@@ -114,7 +111,6 @@ class OrderDetail: Codable {
         self.category = category
     }
 }
-
 // MARK: - TicketTotal
 class TicketTotal: Codable {
     let subtotal, customerTotal: String
@@ -133,7 +129,6 @@ class TicketTotal: Codable {
 typealias Order = [OrderElement]
 
 // MARK: - Encode/decode helpers
-
 class JSONNull: Codable, Hashable {
     
     public static func == (lhs: JSONNull, rhs: JSONNull) -> Bool {
