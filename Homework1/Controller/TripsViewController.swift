@@ -9,6 +9,7 @@ import UIKit
 
 class TripsViewController: UIViewController {
     
+    @IBOutlet weak var driveScoreView: DriveScoreView!
     @IBOutlet weak var tableView: UITableView!
     let data = [
         ["8.2 Ml in 28 Min 27 sec", " 8.2 Ml in 28 Min 27 sec"],
@@ -28,6 +29,16 @@ class TripsViewController: UIViewController {
         let header = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 0))
         //header.backgroundColor = .blue
         tableView.tableHeaderView = header
+        
+        //adding shadow
+        //driveScoreView.layer.cornerRadius = 12
+       // driveScoreView.layer.masksToBounds = true
+        driveScoreView.clipsToBounds = false
+        driveScoreView.layer.shadowOffset = CGSize(width: 0, height: 0)
+        driveScoreView.layer.shadowOpacity = 0.7
+        driveScoreView.layer.shadowRadius = 2.0
+        
+      
     }
 }
 
