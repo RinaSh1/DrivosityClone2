@@ -30,24 +30,15 @@ import UIKit
         view = loadViewFromNib(nibName: "DriveScoreView")
         view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         view.frame = self.bounds
-        view.layer.cornerRadius = self.frame.height/12
-        view.layer.masksToBounds = true
+       
+        view.layer.cornerRadius = 12
+        view.layer.masksToBounds = false
         view.clipsToBounds = true
         view.layer.shadowOffset = CGSize(width: 0, height: 0)
         view.layer.shadowOpacity = 0.7
         view.layer.shadowRadius = 2.0
-        
-        view1.layer.cornerRadius = 5
-        view3.layer.cornerRadius = 5
-        view3.layer.borderWidth = 0.5
-        view3.layer.borderColor = UIColor.black.cgColor
-        view2.layer.cornerRadius = 5
-        view4.layer.cornerRadius = 5
-       
-   
-        
+
         addSubview(view)
-        
     }
     
     func loadViewFromNib(nibName: String) -> UIView {
