@@ -27,7 +27,6 @@ class HomeViewController: UIViewController {
                 print(String(describing: error))
             }
         }
-
         //tableView.register(UINib(nibName: "OrderCell", bundle: nil), forCellReuseIdentifier: "ReusableCell")
         let cellNib = UINib(nibName: "OrderCell", bundle: nil)
         tableView.register(cellNib, forCellReuseIdentifier: "myCell")

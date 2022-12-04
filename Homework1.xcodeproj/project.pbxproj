@@ -13,6 +13,12 @@
 		82511A2F2907DF9700F79F2F /* MyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82511A2E2907DF9700F79F2F /* MyAccountViewController.swift */; };
 		82697D87292E1DA300E82FA4 /* ButtonViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82697D85292E1DA300E82FA4 /* ButtonViewCell.swift */; };
 		82697D88292E1DA400E82FA4 /* ButtonViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82697D86292E1DA300E82FA4 /* ButtonViewCell.xib */; };
+		826A1A4B2937AC1500685554 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826A1A4A2937AC1500685554 /* MapViewController.swift */; };
+		826A1A772938E3DD00685554 /* DrivosityAnnotations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826A1A762938E3DC00685554 /* DrivosityAnnotations.swift */; };
+		826A1A792938FEC400685554 /* TripDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826A1A782938FEC400685554 /* TripDetails.swift */; };
+		826A1A7B293952F300685554 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826A1A7A293952F300685554 /* Trip.swift */; };
+		826A1A8D293BDF0800685554 /* Polygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826A1A8C293BDF0800685554 /* Polygon.swift */; };
+		826A1A8F293BDF5600685554 /* PolygonString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826A1A8E293BDF5600685554 /* PolygonString.swift */; };
 		826D95952900243F00B6AB12 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 826D95942900243F00B6AB12 /* GoogleService-Info.plist */; };
 		ACD9D9EF349D3859DBA387B8 /* Pods_Homework1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFF072F118F12CAEA2F43513 /* Pods_Homework1.framework */; };
 		CD37F71528EF9B050056EA2E /* OrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD37F71328EF9B050056EA2E /* OrderCell.swift */; };
@@ -27,7 +33,6 @@
 		CD609EA828DB5444002F3E83 /* TripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD609EA728DB5444002F3E83 /* TripsViewController.swift */; };
 		CD609EAA28DB545E002F3E83 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD609EA928DB545E002F3E83 /* RegisterViewController.swift */; };
 		CD609EAC28E33539002F3E83 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD609EAB28E33539002F3E83 /* SplashViewController.swift */; };
-		CD672AC528F6EDE8004A14E0 /* OrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD672AC428F6EDE8004A14E0 /* OrderModel.swift */; };
 		CDD5E7FD28F35C89004C7DE0 /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD5E7FC28F35C89004C7DE0 /* DummyData.swift */; };
 		CDD5E7FF28F41CF6004C7DE0 /* OrderElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD5E7FE28F41CF6004C7DE0 /* OrderElement.swift */; };
 /* End PBXBuildFile section */
@@ -40,6 +45,12 @@
 		82511A2E2907DF9700F79F2F /* MyAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountViewController.swift; sourceTree = "<group>"; };
 		82697D85292E1DA300E82FA4 /* ButtonViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewCell.swift; sourceTree = "<group>"; };
 		82697D86292E1DA300E82FA4 /* ButtonViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonViewCell.xib; sourceTree = "<group>"; };
+		826A1A4A2937AC1500685554 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		826A1A762938E3DC00685554 /* DrivosityAnnotations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrivosityAnnotations.swift; sourceTree = "<group>"; };
+		826A1A782938FEC400685554 /* TripDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetails.swift; sourceTree = "<group>"; };
+		826A1A7A293952F300685554 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		826A1A8C293BDF0800685554 /* Polygon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Polygon.swift; sourceTree = "<group>"; };
+		826A1A8E293BDF5600685554 /* PolygonString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolygonString.swift; sourceTree = "<group>"; };
 		826D95942900243F00B6AB12 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8789617C5F103F62F56E7E98 /* Pods-Homework1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework1.debug.xcconfig"; path = "Target Support Files/Pods-Homework1/Pods-Homework1.debug.xcconfig"; sourceTree = "<group>"; };
 		CD37F71328EF9B050056EA2E /* OrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCell.swift; sourceTree = "<group>"; };
@@ -56,7 +67,6 @@
 		CD609EA728DB5444002F3E83 /* TripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsViewController.swift; sourceTree = "<group>"; };
 		CD609EA928DB545E002F3E83 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		CD609EAB28E33539002F3E83 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
-		CD672AC428F6EDE8004A14E0 /* OrderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderModel.swift; sourceTree = "<group>"; };
 		CDD5E7FC28F35C89004C7DE0 /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
 		CDD5E7FE28F41CF6004C7DE0 /* OrderElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderElement.swift; sourceTree = "<group>"; };
 		FFF072F118F12CAEA2F43513 /* Pods_Homework1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Homework1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,7 +140,10 @@
 			children = (
 				CDD5E7FE28F41CF6004C7DE0 /* OrderElement.swift */,
 				CDD5E7FC28F35C89004C7DE0 /* DummyData.swift */,
-				CD672AC428F6EDE8004A14E0 /* OrderModel.swift */,
+				826A1A782938FEC400685554 /* TripDetails.swift */,
+				826A1A7A293952F300685554 /* Trip.swift */,
+				826A1A8C293BDF0800685554 /* Polygon.swift */,
+				826A1A8E293BDF5600685554 /* PolygonString.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -157,8 +170,10 @@
 				CD609EA728DB5444002F3E83 /* TripsViewController.swift */,
 				CD609EA928DB545E002F3E83 /* RegisterViewController.swift */,
 				CD609EAB28E33539002F3E83 /* SplashViewController.swift */,
+				826A1A762938E3DC00685554 /* DrivosityAnnotations.swift */,
 				82511A2C2901729D00F79F2F /* SettingsViewController.swift */,
 				82511A2E2907DF9700F79F2F /* MyAccountViewController.swift */,
+				826A1A4A2937AC1500685554 /* MapViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -285,18 +300,23 @@
 				821ED4EB29253599007974AE /* DriveScoreView.swift in Sources */,
 				CD5C269328BFA060000598ED /* ViewController.swift in Sources */,
 				CD609EA828DB5444002F3E83 /* TripsViewController.swift in Sources */,
+				826A1A792938FEC400685554 /* TripDetails.swift in Sources */,
 				CD5C268F28BFA060000598ED /* AppDelegate.swift in Sources */,
-				CD672AC528F6EDE8004A14E0 /* OrderModel.swift in Sources */,
+				826A1A8F293BDF5600685554 /* PolygonString.swift in Sources */,
 				82697D87292E1DA300E82FA4 /* ButtonViewCell.swift in Sources */,
+				826A1A8D293BDF0800685554 /* Polygon.swift in Sources */,
 				CDD5E7FD28F35C89004C7DE0 /* DummyData.swift in Sources */,
 				CD609EAA28DB545E002F3E83 /* RegisterViewController.swift in Sources */,
 				CD5C269128BFA060000598ED /* SceneDelegate.swift in Sources */,
 				CDD5E7FF28F41CF6004C7DE0 /* OrderElement.swift in Sources */,
+				826A1A772938E3DD00685554 /* DrivosityAnnotations.swift in Sources */,
 				CD609EAC28E33539002F3E83 /* SplashViewController.swift in Sources */,
 				82511A2F2907DF9700F79F2F /* MyAccountViewController.swift in Sources */,
+				826A1A7B293952F300685554 /* Trip.swift in Sources */,
 				82511A2D2901729D00F79F2F /* SettingsViewController.swift in Sources */,
 				CD37F71528EF9B050056EA2E /* OrderCell.swift in Sources */,
 				CD5C26AA28C0D788000598ED /* HomeViewController.swift in Sources */,
+				826A1A4B2937AC1500685554 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
