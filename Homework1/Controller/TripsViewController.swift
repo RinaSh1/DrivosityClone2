@@ -32,7 +32,7 @@ class TripsViewController: UIViewController {
         
         //adding shadow
          driveScoreView.layer.cornerRadius = 12
-        driveScoreView.clipsToBounds = false
+         driveScoreView.clipsToBounds = false
          driveScoreView.layer.shadowOffset = CGSize(width: 0, height: 0)
          driveScoreView.layer.shadowOpacity = 0.7
          driveScoreView.layer.shadowRadius = 2.0

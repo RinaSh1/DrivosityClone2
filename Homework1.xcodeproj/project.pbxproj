@@ -19,6 +19,8 @@
 		826A1A7B293952F300685554 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826A1A7A293952F300685554 /* Trip.swift */; };
 		826A1A8D293BDF0800685554 /* Polygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826A1A8C293BDF0800685554 /* Polygon.swift */; };
 		826A1A8F293BDF5600685554 /* PolygonString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826A1A8E293BDF5600685554 /* PolygonString.swift */; };
+		826A1AB72940C5FC00685554 /* TripDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826A1AB62940C5FC00685554 /* TripDetailsView.swift */; };
+		826A1AB92940C62400685554 /* TripDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 826A1AB82940C62400685554 /* TripDetailsView.xib */; };
 		826D95952900243F00B6AB12 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 826D95942900243F00B6AB12 /* GoogleService-Info.plist */; };
 		ACD9D9EF349D3859DBA387B8 /* Pods_Homework1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFF072F118F12CAEA2F43513 /* Pods_Homework1.framework */; };
 		CD37F71528EF9B050056EA2E /* OrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD37F71328EF9B050056EA2E /* OrderCell.swift */; };
@@ -51,6 +53,8 @@
 		826A1A7A293952F300685554 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 		826A1A8C293BDF0800685554 /* Polygon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Polygon.swift; sourceTree = "<group>"; };
 		826A1A8E293BDF5600685554 /* PolygonString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolygonString.swift; sourceTree = "<group>"; };
+		826A1AB62940C5FC00685554 /* TripDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailsView.swift; sourceTree = "<group>"; };
+		826A1AB82940C62400685554 /* TripDetailsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TripDetailsView.xib; sourceTree = "<group>"; };
 		826D95942900243F00B6AB12 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8789617C5F103F62F56E7E98 /* Pods-Homework1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework1.debug.xcconfig"; path = "Target Support Files/Pods-Homework1/Pods-Homework1.debug.xcconfig"; sourceTree = "<group>"; };
 		CD37F71328EF9B050056EA2E /* OrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCell.swift; sourceTree = "<group>"; };
@@ -158,6 +162,8 @@
 				821ED4EC29253626007974AE /* DriveScoreView.xib */,
 				82697D85292E1DA300E82FA4 /* ButtonViewCell.swift */,
 				82697D86292E1DA300E82FA4 /* ButtonViewCell.xib */,
+				826A1AB62940C5FC00685554 /* TripDetailsView.swift */,
+				826A1AB82940C62400685554 /* TripDetailsView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -242,6 +248,7 @@
 				82697D88292E1DA400E82FA4 /* ButtonViewCell.xib in Resources */,
 				CD5C269B28BFA062000598ED /* LaunchScreen.storyboard in Resources */,
 				826D95952900243F00B6AB12 /* GoogleService-Info.plist in Resources */,
+				826A1AB92940C62400685554 /* TripDetailsView.xib in Resources */,
 				821ED4ED29253626007974AE /* DriveScoreView.xib in Resources */,
 				CD5C269828BFA062000598ED /* Assets.xcassets in Resources */,
 				CD5C269628BFA060000598ED /* Main.storyboard in Resources */,
@@ -317,6 +324,7 @@
 				CD37F71528EF9B050056EA2E /* OrderCell.swift in Sources */,
 				CD5C26AA28C0D788000598ED /* HomeViewController.swift in Sources */,
 				826A1A4B2937AC1500685554 /* MapViewController.swift in Sources */,
+				826A1AB72940C5FC00685554 /* TripDetailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

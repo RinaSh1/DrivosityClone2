@@ -14,6 +14,8 @@ import UIKit
     @IBOutlet weak var view3: UIView!
     @IBOutlet weak var view2: UIView!
     @IBOutlet var view: UIView!
+    
+    
     //intializer for code
     override init(frame: CGRect) {
         super.init(frame: frame)

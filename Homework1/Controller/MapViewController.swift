@@ -23,9 +23,17 @@ class MapViewController: UIViewController {
         let decoder = JSONDecoder()
         handleAddAnnotations(decoder)
         handlePolygon(decoder)
+        
+        let tripView = TripDetailsView(frame: CGRect(x: 0.0, y: 720.0, width:420.0, height: 100.0))
+        self.view.addSubview(tripView)
+        tripView.layer.cornerRadius = 12
+        tripView.clipsToBounds = false
+        tripView.layer.shadowOffset = CGSize(width: 0, height: 0)
+        tripView.layer.shadowOpacity = 0.7
+        tripView.layer.shadowRadius = 2.0
     }
     
-    fileprivate func handleAddAnnotations(_ decoder: JSONDecoder) {
+    func handleAddAnnotations(_ decoder: JSONDecoder) {
         if let jsonData = tripDetails.data(using: .utf8){
             do {
                 let trip = try decoder.decode(Trip.self, from: jsonData)
@@ -45,15 +53,15 @@ class MapViewController: UIViewController {
         }
     }
     
-    fileprivate func handlePolygon(_ decoder: JSONDecoder) {
+    func handlePolygon(_ decoder: JSONDecoder) {
         if let jsonData = PolygonString.data(using: .utf8){
             do {
                 let polygon = try decoder.decode(Polygon.self, from: jsonData)
                 let coordinations = polygon.coordinates.map{ point -> CLLocationCoordinate2D in
                     return CLLocationCoordinate2D(latitude: point[1], longitude: point[0])
                 }
-                let mkpolygon = MKPolygon(coordinates: coordinations, count: coordinations.count)
-                mapView.addOverlay(mkpolygon)
+                let mkpolyline = MKPolyline(coordinates: coordinations, count: coordinations.count)
+                mapView.addOverlay(mkpolyline)
             }
             
             catch {
@@ -61,7 +69,6 @@ class MapViewController: UIViewController {
             }
         }
     }
-    
 }
 
 private extension MKMapView {
@@ -79,11 +86,12 @@ private extension MKMapView {
 
 extension MapViewController: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
-        if overlay is MKPolygon {
-            let polygonView = MKPolygonRenderer(overlay: overlay)
-            polygonView.fillColor = .red
+        if overlay is MKPolyline {
+            let polylineRenderer = MKPolylineRenderer(overlay: overlay)
+            polylineRenderer.strokeColor = UIColor.black
+            polylineRenderer.lineWidth = 5
             
-            return polygonView
+            return polylineRenderer
         }
         //for testing
         return MKPolygonRenderer(overlay: overlay)
